@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReactRailsIssue702</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= javascript_pack_tag 'application' %>
+<%= react_component("HelloWorld", greeting: "foo") %>
+
+<%= yield %>
+
+</body>
+</html>
